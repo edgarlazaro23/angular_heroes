@@ -1,8 +1,16 @@
-<div class="container">
-  <h1>Héroes <small>Marvel y DC</small> </h1>
+<div class="container main-container">
+  <div class="row d-flex justify-content-between">
+      <h1>Héroes <small>Marvel y DC</small> </h1>
+      <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 form-control-sm" type="search" placeholder="Buscar héroe" (keyup.enter)="buscarHeroe(buscartexto.value)" #buscartexto>
+          <button (click)="buscarHeroe(buscartexto.value)" 
+          class="btn btn-primary my-2 my-sm-0 btn-sm" type="button">Buscar</button>
+        </form>
+  </div>
+  
   <hr>
   <div class="card-columns">
     <app-heroe-tarjeta (heroeSeleccionado)="verHeroe($event)" [heroe]="heroe" [index]="i"
-      *ngFor="let heroe of heroes; let i=index"></app-heroe-tarjeta>
+      *ngFor="let heroe of heroes ; let i=index "></app-heroe-tarjeta>
   </div>
 </div>

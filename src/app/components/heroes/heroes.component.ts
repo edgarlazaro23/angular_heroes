@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HeroesService,Heroe } from "../../services/heores.service";
 import { Router } from "@angular/router";
 
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
-  styles: []
+  styles: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
 
@@ -24,6 +25,11 @@ export class HeroesComponent implements OnInit {
 
   verHeroe(idx:number){
     this.router.navigate(['/heroe',idx]);
+  }
+
+  buscarHeroe(termino:string){
+    //console.log(termino);
+    this.router.navigate(['/buscar',termino]);
   }
 
 }
