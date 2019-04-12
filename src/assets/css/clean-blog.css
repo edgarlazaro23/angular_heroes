@@ -86,7 +86,7 @@ img::-moz-selection {
 
 #mainNav .navbar-brand {
   font-weight: 800;
-  color: #343a40;
+  color: #ffffff;
 }
 
 #mainNav .navbar-toggler {
@@ -94,7 +94,7 @@ img::-moz-selection {
   font-weight: 800;
   padding: 13px;
   text-transform: uppercase;
-  color: #343a40;
+  color: #ffffff;
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
@@ -102,12 +102,14 @@ img::-moz-selection {
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  color: white;
 }
 
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
     background: #323232;
+    color: #fff;
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
@@ -146,7 +148,7 @@ img::-moz-selection {
     background-color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #ffffff;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -155,7 +157,7 @@ img::-moz-selection {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
+    color: rgb(255, 255, 255);
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
